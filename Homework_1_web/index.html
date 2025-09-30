@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brown's Bakery</title>
+    <link rel="stylesheet" href="./CSS/style.css" />
+  </head>
+  <body>
+
+<!-- Navbar -->
+    <nav>
+      <div class="layar-dalam">
+        <div class="logo">
+          <a>Brown's Bakery</a>
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#aboutus">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#order">Order</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Landing -->
+      <header id="home">
+        <div class="intro">
+          <h3>Welcome to Brown's Bakery</h3>
+          <p>
+            Enjoy a hassle-free shopping experience with services from Brown's Bakery.
+          </p>
+          <p>
+            <a href="#aboutus" class="tombol">GET STARTED</a>
+          </p>
+        </div>
+      </header>
+
+<!-- About -->
+        <section id="aboutus">
+          <div class="layar-dalam">
+            <h3>About Us</h3>
+            <p class="ringkasan">
+              Unique cakes are crafted like a masterpiece, loaded with happiness.
+            </p>
+            <div class="konten-isi">
+              <p>
+                Brown's Bakery has founded in 2023. We prioritize service excellence and our customers' needs by building the most effective delivery and customer service team to achieve our goal of becoming the most reliable one-click-away-service online cake shop in Jakarta, Indonesia.
+              </p>
+            </div>
+          </div>
+        </section>
+
+<!-- About 1 -->
+        <section class="abuabu" id="support">
+          <div class="layar-dalam support">
+            <div class="kolom">
+              <img src="asset/111.jpg" />
+              <h6>Cake</h6>
+              <p>
+                Various of cakes are available here, and there is no minimum purchase  
+              </p>
+            </div>
+            <div class="kolom">
+              <img src="asset/cake3.jpg" />
+              <h6>Package Tart</h6>
+              <p>
+                We supply various kinds of bread cakes, birthday breads, 
+                celebration breads, party breads, and all your celebration need.
+              </p>
+            </div>
+            <div class="kolom">
+              <img src="asset/333.jpg" />
+              <h6>Sponge Cakes</h6>
+              <p>
+                We provide premium flufy sponge cakes for every need.
+              </p>
+            </div>
+          </div>
+        </section>
+
+
+
+<!-- Halaman Gambar Tengah -->
+        <section class="quote">
+          <div class="layar-dalam">
+            <p>you can't buy happiness but you can buy a cake <br><br>
+            that's kind of the same things</p>
+          </div>
+        </section>
+
+<!-- Menu -->
+        <section id="menu">
+          <div class="layar-dalam">
+            <h3>Menu</h3>
+            <p class="ringkasan">
+              Cake is the sweetiest life of pradise!
+            </p>
+            <div class="menu-container">
+              <div class="menu-item">
+                <img src="asset/10.jpg">
+                <h6>Di Brown</h6>
+              </div>
+              <div class="menu-item">
+                <img src="asset/coklat7.jpg">
+                <h6>Tiramisu</h6>
+              </div>
+              <div class="menu-item">
+                <img src="asset/coklat6.jpg">
+                <h6>Cookies</h6>
+              </div>
+            </div>
+          </div>
+        </section>
+
+             
+        
+<!-- FORM ORDER -->
+<div id="order" class="kotak">
+  <h3>Order Cake</h3>
+  <p class="pkotak">
+    Enter complete data to order cake
+ </p>
+  <form>
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="firstname" placeholder="input your name..">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="country">Jenis Kue</label>
+      </div>
+      <div class="col-85">
+        <select id="cake-variant" name="jenis">
+          <option value="Oreo-Cake">Oreo Cake</option>
+          <option value="Milo-Cake">Milo Cake</option>
+          <option value="Butter-Cake">Butter Cake</option>
+          <option value="Bold-Cake">Bold Cake</option>
+          <option value="Di-Brown">Di Brown</option>
+          <option value="Italia-Cake">Italia Cake</option>
+          <option value="Chiffon-Cake">Chiffon Cake</option>
+          <option value="tiramisu-cake">Tiramisu Cake</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Jumlah</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="lname" name="lastname" placeholder="Masukan jumlah kue..">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="subject">Alamat</label>
+      </div>
+      <div class="col-75">
+        <textarea id="subject" name="subject" placeholder="Masukan alamat tujuan.." style="height:200px"></textarea>
+      </div>
+    </div>
+    <br>
+    <div class="row button-container">
+      <input onclick="orderCake()" type="button" value="submit" class="submitButton">
+      <!-- <button onclick="orderCake()">kirim</button> -->
+    </div>
+    </form>
+    <div id="res-message"></div>
+</div>
+<br><br>
+ 
+         
+           
+          </div>
+        </section>
+
+
+<!-- FOOOTERR---------------------------- -->
+      <footer id="contact">
+        <div class="layar-dalam">
+          <div>
+            <h5>Alamar</h5>
+            Cileungsi
+          </div>
+          <div>
+            <h5>Contact</h5>
+            088888888
+          </div>
+          <div>
+            <h5>Help</h5>
+            www.link.com
+          </div>
+          <div>
+            <h5>Sitemap</h5>
+            www.linkmap.com
+          </div>
+        </div>
+      </footer>
+    </div>
+  <script src="./js/script.js"></script>
+  </body>
+</html>
